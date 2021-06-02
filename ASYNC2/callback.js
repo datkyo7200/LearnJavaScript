@@ -1,26 +1,3 @@
-// Sync code example
-
-// const otherFunct = () => {
-//     console.log('we are in another function');
-//     console.log('do some stuff');
-// }
-
-// console.log('Start');
-
-// otherFunct();
-
-// console.log('End');
-
-// Async code example
-
-// console.log("Start");
-
-// setTimeout(() => {
-//   console.log("We are in the timeout");
-// }, 5000);
-
-// console.log("End");
-
 console.log("Start");
 
 const loginUser = (email, password, callback) => {
@@ -47,7 +24,7 @@ const videoDetails = (video, callback) => {
   }, 2000);
 };
 
-const user = loginUser("datkyo7200@gmail.com", "12345678", (user) => {
+const user = loginUser("developer@gogo.com", "12345678", (user) => {
   console.log(user);
   getUserVideos(user.userEmail, (videos) => {
     console.log(videos);
@@ -57,4 +34,5 @@ const user = loginUser("datkyo7200@gmail.com", "12345678", (user) => {
   });
 });
 
+console.log(user);
 console.log("End");
