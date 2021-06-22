@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Sync code example
 
 // const otherFunct = () => {
@@ -5,6 +6,8 @@
 
 // callbacks in asynchronus
 
+=======
+>>>>>>> 8895215d8d582374a6303def4b53667b779ae5bb
 console.log("Start");
 
 const loginUser = (email, password, callback) => {
@@ -31,6 +34,7 @@ const videoDetails = (video, callback) => {
     }, 2000);
 };
 
+<<<<<<< HEAD
 const user = loginUser("datkyo7200@gmail.com", "12345678", (user) => {
     console.log(user);
     getUserVideos(user.userEmail, (videos) => {
@@ -38,7 +42,16 @@ const user = loginUser("datkyo7200@gmail.com", "12345678", (user) => {
         videoDetails(videos[0].title, (title) => {
             console.log(title);
         });
+=======
+const user = loginUser("developer@gogo.com", "12345678", (user) => {
+  console.log(user);
+  getUserVideos(user.userEmail, (videos) => {
+    console.log(videos);
+    videoDetails(videos[0].title, (title) => {
+      console.log(title);
+>>>>>>> 8895215d8d582374a6303def4b53667b779ae5bb
     });
 });
 
+console.log(user);
 console.log("End");
